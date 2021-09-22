@@ -37,21 +37,33 @@
 <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> 
 
+<!-- animation -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <title>Portfolio</title>
   </head>
-  <body>
+  <body data-spy="scroll" data-target=".navbar-nav">
     <noscript>You need to enable JavaScript to run this app.</noscript>
+
+
+
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
   </body>
+  
+  <!-- animation -->
+  <script>
+    AOS.init();
+  </script>
+
+<!-- to hide navbar on click -->
+<script>
+  $('.navbar-collapse a').click(function(){
+      $(".navbar-collapse").collapse('hide');
+  });
+  </script>
+
+  
 </html>

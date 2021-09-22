@@ -1,0 +1,62 @@
+/************* media query **************/
+
+@media screen and (max-width: 700px) {
+  .container {
+    display: block;
+  }
+  .leftdiv-name {
+    top: 50%;
+    left: 30px;
+    width: 300px;
+  }
+  .leftdiv-name h1 {
+    color: var(--primary-white);
+  }
+  .navbar-toggler {
+    z-index: 2;
+  }
+  .navbar-collapse.show {
+    background-color: var(--primary-black);
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    padding-top: 20%;
+  }
+  li.nav-item {
+    float: none;
+  }
+  .navbar-nav.ml-auto {
+    padding-left: 0px;
+    padding-top: 10%;
+    padding-bottom: 5%;
+    height: 100vh;
+    background-color: var(--primary-black);
+  }
+  .navbar-nav {
+    background-color: var(--primary-black);
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    padding-top: 20%;
+    transition-duration: 1s;
+  }
+  .show .navbar-nav {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    display: block;
+    transition-duration: 1s;
+  }
+  .logo {
+    width: 110px;
+    z-index: 6;
+  }
+  .leftdiv-name h1 {
+    font-size: 40px;
+  }
+  .contact img {
+    display: none;
+  }
+}
